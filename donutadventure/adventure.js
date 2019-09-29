@@ -112,8 +112,6 @@ const fightInteraction = () => {
     }
 }
 
-    document.body.setAttribute("style", 'background-image: url("bg.jpg")');
-    document.body.removeAttribute("style", 'background-image: url("bg.jpg")');
 const start = () => { 
     document.body.setAttribute("style", 'background-image: url("donut.gif")');
     document.body.removeAttribute("style", 'background-image: url("donut.gif")');
@@ -126,7 +124,7 @@ const start = () => {
 }
 
 /////////////////////START////////////////////////
-setTimeout(start, 100);
+setTimeout(start, 300);
 
 
 
