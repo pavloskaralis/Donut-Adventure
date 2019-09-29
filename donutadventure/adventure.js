@@ -87,12 +87,12 @@ const reloadGame = () => {
 const checkForEnd = () => {
     if (pizzaRat.health <= 0) {
         document.body.setAttribute("style", 'background-image: url("donut.gif")');
-        setTimeout(dougieWins, 100);
-        setTimeout(reloadGame, 101);
+        setTimeout(dougieWins, 500);
+        setTimeout(reloadGame, 501);
     } else if (dougie.health <= 0) {
         document.body.setAttribute("style", 'background-image: url("rat.png")');
-        setTimeout(pizzaRatWins, 100);
-        setTimeout(reloadGame, 101);
+        setTimeout(pizzaRatWins, 500);
+        setTimeout(reloadGame, 501);
     } 
 }
 
@@ -120,7 +120,7 @@ const start = () => {
 }
 
 /////////////////////START////////////////////////
-setTimeout(start, 300);
+setTimeout(start, 500);
 
 
 
