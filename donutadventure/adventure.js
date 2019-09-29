@@ -1,3 +1,12 @@
+/////////////////////PRELOAD FOR NETLIFY////////////////////////
+const preloadImage = url => {
+    let img = new Image();
+    img.src = url;
+}
+
+preload("bg.jpg");
+preload("donut.gif");
+preload("rat.png"); 
 /////////////////////RANDOM FUNCTIONS////////////////////////
 const randomPhrase = arr => Math.floor(Math.random() * arr.length);
 const randomWeapon = () => Math.round(Math.random() * 1);
