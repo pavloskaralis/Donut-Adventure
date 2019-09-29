@@ -65,7 +65,7 @@ const pizzaRat = new Enemy("Pizza Rat");
 
 /////////////////////ALERT VARIABLES////////////////////////
 const dougieWins = () => alert("Pizza Rat has been defeated for now... dance Dougie dance!");
-const pizzaRatWins = () => alert ("Looks like Dougie's dream of dancing in Time Square has to wait.");
+const pizzaRatWins = () => alert ("Looks like Dougie's dream to dance in Times Square has to wait.");
 
 /////////////////////GAME FUNCTIONS////////////////////////
 const sassOrFight = () =>  {
