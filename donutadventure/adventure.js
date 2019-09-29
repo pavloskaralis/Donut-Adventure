@@ -1,5 +1,3 @@
-/////////////////////PRELOAD FOR NETLIFY////////////////////////
-
 /////////////////////RANDOM FUNCTIONS////////////////////////
 const randomPhrase = arr => Math.floor(Math.random() * arr.length);
 const randomWeapon = () => Math.round(Math.random() * 1);
@@ -89,12 +87,12 @@ const reloadGame = () => {
 const checkForEnd = () => {
     if (pizzaRat.health <= 0) {
         document.body.setAttribute("style", 'background-image: url("donut.gif")');
-        setTimeout(dougieWins, 1000);
-        setTimeout(reloadGame,1001);
+        setTimeout(dougieWins, 100);
+        setTimeout(reloadGame,101);
     } else if (dougie.health <= 0) {
         document.body.setAttribute("style", 'background-image: url("rat.png")');
-        setTimeout(pizzaRatWins, 1000);
-        setTimeout(reloadGame,1001);
+        setTimeout(pizzaRatWins, 100);
+        setTimeout(reloadGame,101);
     } 
 }
 
@@ -115,6 +113,10 @@ const fightInteraction = () => {
 }
 
 const start = () => { 
+    document.body.setAttribute("style", 'background-image: url("donut.gif")');
+    document.body.removeAttribute("style", 'background-image: url("donut.gif")');
+    document.body.setAttribute("style", 'background-image: url("rat.png")');
+    document.body.removeAttribute("style", 'background-image: url("rat.png")');
     sassInteraction();
     while((dougie.health > 0) && (pizzaRat.health > 0)) {
         sassOrFight();
@@ -122,4 +124,10 @@ const start = () => {
 }
 
 /////////////////////START////////////////////////
-setTimeout(start, 1000);
+setTimeout(start, 100);
+
+
+
+
+
+
