@@ -7,6 +7,3 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-#preload-01 { background: url("bg.jpg") no-repeat -9999px -9999px; }
-#preload-02 { background: url("donut.gif") no-repeat -9999px -9999px; }
-#preload-03 { background: url("rat.png") no-repeat -9999px -9999px; }
