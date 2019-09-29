@@ -1,16 +1,5 @@
 /////////////////////PRELOAD FOR NETLIFY////////////////////////
-var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-preload(
-    "bg.jpg",
-    "donut.gif",
-    "rat.png"
-)
+
 /////////////////////RANDOM FUNCTIONS////////////////////////
 const randomPhrase = arr => Math.floor(Math.random() * arr.length);
 const randomWeapon = () => Math.round(Math.random() * 1);
