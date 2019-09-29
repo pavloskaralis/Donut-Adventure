@@ -104,11 +104,12 @@ const sassInteraction = () => {
 const fightInteraction = () => {
     if (randomWeapon() === 0) {
         dougie.fight(pizzaRat);
-        pizzaRat.health > 0 ? pizzaRat.fight(dougie) : checkForEnd();;
-
+        pizzaRat.health > 0 ? pizzaRat.fight(dougie) : checkForEnd();
+        dougie.health <= 0 ? checkForEnd() : false; 
     } else {
         pizzaRat.fight(dougie);
-        dougie.health > 0 ? dougie.fight(pizzaRat) : checkForEnd();;
+        dougie.health > 0 ? dougie.fight(pizzaRat) : checkForEnd();
+        pizzaRat.health <= 0 ? checkForEnd() : false; 
     }
 }
 
@@ -121,4 +122,9 @@ const start = () => {
 
 /////////////////////START////////////////////////
 setTimeout(start, 500);
+
+
+
+
+
 
