@@ -124,7 +124,7 @@ const start = () => {
 }
 
 /////////////////////START////////////////////////
-setTimeout(start, 300);
+setTimeout(start, 500);
 
 
 
